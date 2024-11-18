@@ -1,0 +1,353 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+
+:root {
+    --colorTextFondNoir: #e4e3ee;
+}
+
+html {
+    font-size: 55%;
+}
+
+@font-face {
+    font-family:'OpenSans Bold' ;
+    src: url(../font/static/OpenSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'OpenSans medium';
+    src: url(../font/static/OpenSans-Medium.ttf);
+}
+
+/*--------------------General------------------*/
+
+body {
+    background: radial-gradient(circle farthest-corner at center center, #e4e3ee 60%, rgba(0,0,0,0.21) 90%);
+
+        h1, h2 {
+            font-size: 4rem;
+            margin-bottom: 5rem;
+            margin-top: 5rem;
+            font-family:'OpenSans Bold' ;
+            color: var(--colorTextFondNoir);
+            background-color: #000000;
+            border: 0.5rem solid var(--colorTextFondNoir);
+            border-radius: 1rem;
+            box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.88);
+            border: 0.5rem solid var(--colorTextFondNoir);
+        }
+            h3 {
+                font-size: 3.5rem;
+                margin-bottom: 3rem;
+                margin-top: 2rem;
+                font-family:'OpenSans Bold' ;
+                color: var(--colorTextFondNoir);
+                background-color: #000000;
+                box-shadow:  0px 0px 15px 5px rgba(0,0,0,0.88);
+                border: 0.3rem solid var(--colorTextFondNoir);
+                border-radius: 1rem;
+            }
+                a {
+                    text-decoration: none;
+                }
+                    p {
+                        font-size: 3rem;
+                        font-family: 'OpenSans medium';
+                    }    
+}
+
+/*----------------Header and NavBar --------------------*/
+
+header {
+    background-color: black;
+
+        .nav-link {
+            padding-bottom: 2rem;
+        }
+                .nav-link:hover {
+                    color: rgba(137, 135, 132, 0.902);
+                }
+                    .navbar-toggler-icon {
+                        width: 6rem;
+                        padding: 3rem;
+                        margin-bottom: 1rem;
+                        margin-left: 1rem;  
+                    }
+                        .navbar-nav a {
+                            color: var(--colorTextFondNoir);
+                            margin-inline: 2rem;
+                        }
+                            .navbar-nav .iconSocial {
+                                fill: var(--colorTextFondNoir);
+                            }
+                                .navbar-collapse {
+                                    justify-content: center;
+                                    font-size: 3rem;
+                                    margin-bottom: 1rem;
+                                }
+}
+
+/*----------Header and NavBar RESPONSIVE --------------------*/
+
+@media screen and (min-width: 992px){
+     .responsive {
+        display: none;
+    } 
+}
+
+/*----------Section Contenu Principal ACCUEIL--------------------*/
+
+.hero .salonSoTatoo {
+    margin-top: 17rem;
+    box-shadow: 0px -1px 12px 16px rgba(0,0,0,0.88);
+    border: 0.5rem solid var(--colorTextFondNoir);
+} 
+
+/*----------Resposive Contenu Principal ACCUEIL------------------*/
+
+@media screen and (max-width:768px) {
+    .hero .salonSoTatoo {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+        .avatarMartine {
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+
+}
+
+@media screen and (min-width:768px) {
+    .hero .salonSoTatoo {
+        margin-top: 17rem;
+    }
+        .avatarMartine {
+            margin-top: 10rem;
+        }      
+}
+
+/*-----------Section A PROPOS -----------------------------*/
+
+.avatarMartine {
+    width: 53.5rem; 
+    margin-bottom: 5rem;
+    margin-top:12rem;
+    box-shadow: 0px -1px 12px 16px rgba(0,0,0,0.88);
+    border: 0.5rem solid var(--colorTextFondNoir);
+}
+
+/*-----------Section Mes Services------------------------*/
+
+#services .service .serviceIcon {
+   
+    width: 8rem;
+    height: 8rem;  
+    border:2px solid #000000;
+    border-radius: 50%;      
+}
+
+/*--------------Section Portfolio---------------------*/
+
+#portfolio .sectionTitre {
+    text-align: center;
+    margin: 0 auto;
+    display: inline;
+}
+
+#portfolio .container:not(.bordure)  {
+    background-color: #000000;
+    border-radius: 1rem;
+    box-shadow: -1px -2px 12px 16px rgba(0,0,0,0.88);
+    border: 0.5rem solid var(--colorTextFondNoir);
+    margin-top: 6rem;
+}
+
+.portfolioSectionPhotos h2 {
+    color: var(--colorTextFondNoir);
+    margin: 1rem;
+    border: 1px solid var(--colorTextFondNoir);
+    border-radius: 1rem;
+}
+
+.portfolioSectionPhotos img {
+   object-fit: cover;
+    height: 40rem;
+    width: 100%;
+}
+
+#portfolio .espace {
+    height: 10rem;  
+}
+
+.lien-conteneur-photo {
+    position: relative;
+
+        .photo-hover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5rem;
+            color: var(--colorTextFondNoir);
+            display: none;
+        
+        }
+
+}
+  
+  .lien-conteneur-photo:hover .photo-hover {
+    display: flex;
+    background-color: #000000bd;
+    height: 6rem;
+  }
+
+
+
+/*-----------Section CONTACT -----------------------------*/
+
+#contact input, textarea {
+    background-color: #000000;
+    color: var(--colorTextFondNoir);
+    border-radius: 1rem;
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.88);
+    border: 0.3rem solid var(--colorTextFondNoir);
+    font-size: 2.5rem;
+
+        .mapGoogle {
+            background-color: #000000;
+            color: var(--colorTextFondNoir);
+            border-radius: 1rem;
+            box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.88);
+            border: 0.3rem solid var(--colorTextFondNoir);
+        }
+            .formulaire {
+                margin-top: 5rem;
+                margin-bottom: 5rem;
+            }
+
+            .label label {
+               color:black;
+                font-size: 4rem;
+                margin-bottom: 2rem;
+            
+            }
+  }
+
+  /*-----------Section Footer -----------------------------*/
+
+  footer {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    font-family: 'OpenSans medium';
+    min-height: 10rem;
+    background-color: black;
+    color: var(--colorTextFondNoir);
+    font-size: 2rem;
+    margin-top: 3rem;
+
+    .logoFooter {
+        max-width: 30rem;
+    }
+}
+
+/*-----------Section Plan du site -----------------------------*/
+
+.sectionPrincipale  {
+
+    .sectionPrincipale, h3, ul {
+        margin-top: 5rem;
+    margin-left: 3rem;
+    }
+
+    ul li a {
+        color: #000000;
+        font-size: 3rem;
+    }
+
+        .serviceSecondaire  {
+            margin-left: 4rem;
+            margin-top: -5rem;
+        }
+            .contact {
+                margin-top: -5rem;
+            }
+
+                .contact ul li a {
+                    color: #000000;
+                    font-size: 3rem;
+                }
+                    .contactSecondaire  {
+                        margin-left: 4rem;
+                        margin-top: -5rem;
+                    }
+
+}
+
+.sectionRessources {
+    
+    h3, .sectionRessources ul {
+    margin-top: 5rem;
+    margin-left: 3rem;  
+}
+    ul li a {
+        color: #000000;
+        font-size: 3rem;
+    }
+
+}
+/*-------------------Section Mention Legal----------*/
+
+#mentionLegal {
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+/*-------------------Section Back to top----------*/
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom:20rem; /* Place the button at the bottom of the page */
+    right: 3rem;
+    z-index: 99; /* Make sure it does not overlap */
+    border: 0.3rem solid var(--colorTextFondNoir);
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.88); 
+    outline: none; /* Remove outline */
+    background-color: rgb(0, 0, 0); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+  @media screen and (max-width:768px) {
+    #myBtn {
+        position: fixed;
+  bottom: 21rem;
+  right: 1rem;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #000000;
+  color: white;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 10px;
+  font-size: 17px;
+  border: 0.3rem solid var(--colorTextFondNoir);
+    }
+  }
