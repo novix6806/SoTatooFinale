@@ -93,6 +93,9 @@ header .navbar-collapse {
   box-shadow: 0px -1px 12px 16px rgba(0, 0, 0, 0.88);
   border: 0.5rem solid var(--colorTextFondNoir);
 }
+.hero span {
+  font-family: 'OpenSans Bold';
+}
 /*----------Resposive Contenu Principal ACCUEIL------------------*/
 @media screen and (max-width: 768px) {
   .hero .salonSoTatoo {
